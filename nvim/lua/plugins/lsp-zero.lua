@@ -63,9 +63,9 @@ return {
         cmp.setup({
             formatting = cmp_format,
             sources = {
+                {name = "luasnip"},
                 {name = "nvim_lsp"},
                 {name = "nvim_lua"},
-                {name = "luasnip"},
             },
             window = {
                 completion = cmp.config.window.bordered({

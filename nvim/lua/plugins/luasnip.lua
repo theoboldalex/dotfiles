@@ -32,7 +32,9 @@ return {
                     ls.parser.parse_snippet("cfn", "function ($1) {\n    $0\n}\n"),
                     ls.parser.parse_snippet("sfn", "fn ($1) => $0"),
                     ls.parser.parse_snippet("ss", "self::$0"),
-                    ls.parser.parse_snippet("ns", "namespace $0;")
+                    ls.parser.parse_snippet("ns", "namespace $0;"),
+                    ls.parser.parse_snippet("it", "it('$1', function () {\n    $0\n});"),
+                    ls.parser.parse_snippet("refdb", "uses(RefreshDatabase::class);")
                 },
                 javascript = {
                     ls.parser.parse_snippet("log", "console.log($1);")
