@@ -14,5 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     "tpope/vim-fugitive",
     "tpope/vim-commentary",
-    { import = "plugins" }
+    { import = "plugins" },
+
+    -- home rolled
+    { dir = "~/plugins/buf_write.nvim" }
 })
