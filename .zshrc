@@ -19,6 +19,7 @@ alias sed="gsed"
 alias cat="bat"
 alias todo="cd $HOME/notes/ && nvim todo.md"
 alias notes="cd $HOME/notes && nvim ."
+alias dot="cd $HOME/dotfiles && nvim ."
 
 alias d="docker"
 alias dc="docker-compose"
