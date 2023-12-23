@@ -18,7 +18,7 @@ return {
                     ".git/",
                     ".idea/",
                     ".vscode/",
-                }
+                },
             },
             pickers = {
                 find_files = {

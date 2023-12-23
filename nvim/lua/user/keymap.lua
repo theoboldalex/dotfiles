@@ -24,10 +24,15 @@ vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 vim.keymap.set("n", "<leader>gg", "<cmd>Telescope git_branches<cr>")
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
-vim.keymap.set('n', '<leader>rg', function()
+vim.keymap.set("n", "<leader>rg", function()
     require("telescope.builtin").grep_string({
         search = vim.fn.input("Grep > "),
         use_regex = true
+    })
+end)
+vim.keymap.set("n", "<leader>gv", function()
+    require("telescope.builtin").lsp_definitions({
+        jump_type = "vsplit"
     })
 end)
 
