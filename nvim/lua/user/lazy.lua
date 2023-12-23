@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     "tpope/vim-fugitive",
     "tpope/vim-commentary",
+    "tpope/vim-eunuch",
     { import = "plugins" },
 
     -- home rolled
