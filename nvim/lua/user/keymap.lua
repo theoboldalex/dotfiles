@@ -19,6 +19,9 @@ vim.keymap.set("n", "<leader>gs", ":G<cr>")
 vim.keymap.set("n", "g[", "<cmd>diffget //2<cr>")
 vim.keymap.set("n", "g]", "<cmd>diffget //3<cr>")
 
+-- vim-eunuch
+vim.keymap.set("n", "<leader>md", ":MkDir ")
+
 -- telescope
 vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
