@@ -53,6 +53,9 @@ return {
                             licenceKey = get_intelephense_license_key()
                         }
                     })
+                end,
+                gopls = function()
+                    require("lspconfig").gopls.setup({})
                 end
             }
         })
