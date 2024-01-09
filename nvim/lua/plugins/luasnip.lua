@@ -41,6 +41,10 @@ return {
                 },
                 typescript = {
                     ls.parser.parse_snippet("log", "console.log($1);")
+                },
+                go = {
+                    ls.parser.parse_snippet("ernil", "if err != nil {\n    $0\n}"),
+                    ls.parser.parse_snippet("test", "func Test$1(t *testing.T) {\n    $0\n}")
                 }
             }
         )
