@@ -1,18 +1,7 @@
-"" Source your .vimrc
-"source ~/.vimrc
-
-"" -- Suggested options --
-" Show a few lines of context around the cursor. Note that this makes the
-" text scroll if you mouse-click near the start or end of the window.
 set scrolloff=10
-
-" Do incremental searching.
 set incsearch
-
 " Don't use Ex mode, use Q for formatting.
 map Q gq
-
-" Find more examples here: https://jb.gg/share-ideavimrc
 set visualbell
 set noerrorbells
 set ignorecase
@@ -21,7 +10,6 @@ set number
 set relativenumber
 nmap <leader>rl :set relativenumber!<CR>
 map <leader>b <Action>(ToggleLineBreakpoint)
-
 map <leader>x <Action>(PhpListenDebugAction)
 
 " TODO: figure out how to make these one action. Currently requires double undo

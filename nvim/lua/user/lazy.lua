@@ -16,7 +16,4 @@ require("lazy").setup({
     "tpope/vim-commentary",
     "tpope/vim-eunuch",
     { import = "plugins" },
-
-    -- home rolled
-    { dir = "~/plugins/buf_write.nvim" }
 })
