@@ -15,6 +15,7 @@ alias zshrc="nvim $HOME/.zshrc"
 alias srczsh="source $HOME/.zshrc"
 alias sed="gsed"
 alias cat="bat"
+alias hg="history | rg -i"
 
 alias d="docker"
 alias dc="docker-compose"

@@ -34,7 +34,7 @@ return {
                     ls.parser.parse_snippet("ns", "namespace $0;"),
                     ls.parser.parse_snippet("it", "it('$1', function () {\n    $0\n});"),
                     ls.parser.parse_snippet("refdb", "uses(RefreshDatabase::class);"),
-                    ls.parser.parse_snippet("tc", "try {\n    $TM_SELECTED_TEXT\n} catch(Exception $e) {\n}"),
+                    ls.parser.parse_snippet("tc", "try {\n    $0\n} catch(Exception $e) {\n}"),
                     ls.parser.parse_snippet("fe", "foreach ($1 as $2) {\n    $0\n}"),
                     ls.parser.parse_snippet("if", "if ($1) {\n    $0\n}")
                 },
