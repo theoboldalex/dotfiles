@@ -56,6 +56,9 @@ return {
                 end,
                 gopls = function()
                     require("lspconfig").gopls.setup({})
+                end,
+                ocamllsp = function()
+                    require("lspconfig").ocamllsp.setup({})
                 end
             }
         })
