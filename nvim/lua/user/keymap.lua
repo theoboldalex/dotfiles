@@ -1,5 +1,6 @@
 --NORMAL MODE REMAPS -- 
-vim.keymap.set("n", "<leader>1", ":E<cr>")
+-- vim.keymap.set("n", "<leader>1", ":E<cr>")
+vim.keymap.set("n", "<leader>1", "<cmd>Neotree toggle<cr>")
 vim.keymap.set("n", "<leader>rl", ":set relativenumber! <cr>")
 vim.keymap.set("n", "<leader>x", ":w<CR> :so %<CR>")
 vim.keymap.set("n", "<leader>[", ":call append(line('.')-1, '')<CR>")
