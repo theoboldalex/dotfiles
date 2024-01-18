@@ -11,6 +11,8 @@ vim.keymap.set("n", "c[", ":cp<CR>zz")
 vim.keymap.set("n", "c]", ":cn<CR>zz")
 vim.keymap.set("n", "cx", ":ccl<CR>")
 vim.keymap.set("n", "<leader>o", "<cmd>!open %<cr><cr>")
+-- get current file path from repo root
+vim.keymap.set("n", "<leader>rp", ":!echo % | pbcopy<cr>")
 
 -- vim-fugitive
 vim.keymap.set("n", "<leader>gb", "<cmd>Git blame -w<cr>")
