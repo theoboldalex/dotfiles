@@ -6,6 +6,10 @@ DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 rm $HOME/.zshrc
 ln -s $DOTFILES/.zshrc $HOME/.zshrc
 
+# OH MY ZSH
+rm $HOME/.oh-my-zsh/themes/aubergine.zsh-theme
+ln -s $DOTFILES/oh-my-zsh/themes/aubergine.zsh-theme $HOME/.oh-my-zsh/themes/aubergine.zsh-theme
+
 # ALACRITTY
 rm -rf $HOME/.config/alacritty
 ln -s $DOTFILES/alacritty $HOME/.config/alacritty
