@@ -19,12 +19,11 @@ o.autoindent = true
 o.expandtab = true
 o.tabstop = 4
 o.shiftwidth = 4
-o.updatetime = 100
+-- o.updatetime = 100
 o.scrolloff = 10
 o.signcolumn = "no"
 o.hlsearch = false
 o.wildmode = 'longest:full,full'
-o.title = true
 o.splitright = true
 o.confirm = true
 
