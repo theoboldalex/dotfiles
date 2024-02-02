@@ -16,5 +16,5 @@ require("lazy").setup({
     "tpope/vim-commentary",
     "tpope/vim-eunuch",
     { import = "plugins" },
-    { dir = "~/plugins/dotscope.nvim" }
+    -- { dir = "~/plugins/gitlens.nvim" }
 })
