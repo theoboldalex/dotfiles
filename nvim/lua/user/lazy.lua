@@ -15,6 +15,7 @@ require("lazy").setup({
     "tpope/vim-fugitive",
     "tpope/vim-commentary",
     "tpope/vim-eunuch",
+    "tpope/vim-unimpaired",
     { import = "plugins" },
     -- { dir = "~/plugins/gitlens.nvim" }
 })
