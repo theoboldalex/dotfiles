@@ -27,6 +27,7 @@ vim.keymap.set("n", "<leader>md", ":MkDir ")
 
 -- telescope
 vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 vim.keymap.set("n", "<leader>gg", "<cmd>Telescope git_branches<cr>")
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")

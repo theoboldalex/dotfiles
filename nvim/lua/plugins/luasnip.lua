@@ -3,13 +3,13 @@ return {
     config = function()
         local ls = require("luasnip")
 
-        vim.keymap.set({ "i", "s" }, "<C-k>", function ()
+        vim.keymap.set({ "i", "s" }, "<C-k>", function()
             if ls.expand_or_jumpable() then
                 ls.expand_or_jump()
             end
         end, { silent = true })
 
-        vim.keymap.set({ "i", "s" }, "<C-j>", function ()
+        vim.keymap.set({ "i", "s" }, "<C-j>", function()
             if ls.jumpable(-1) then
                 ls.jump(-1)
             end
@@ -36,7 +36,10 @@ return {
                     ls.parser.parse_snippet("refdb", "uses(RefreshDatabase::class);"),
                     ls.parser.parse_snippet("tc", "try {\n    $0\n} catch(Exception $e) {\n}"),
                     ls.parser.parse_snippet("fe", "foreach ($1 as $2) {\n    $0\n}"),
-                    ls.parser.parse_snippet("if", "if ($1) {\n    $0\n}")
+                    ls.parser.parse_snippet("@f", "@foreach ($1 as $2)\n    $0\n@endforeach"),
+                    ls.parser.parse_snippet("if", "if ($1) {\n    $0\n}"),
+                    ls.parser.parse_snippet("@i", "@if ($1)\n    $0\n@endif"),
+                    ls.parser.parse_snippet("{{", "{{ $1 }}$0"),
                 },
                 javascript = {
                     ls.parser.parse_snippet("log", "console.log($1);")
@@ -47,6 +50,9 @@ return {
                 go = {
                     ls.parser.parse_snippet("ee", "if err != nil {\n    $0\n}"),
                     ls.parser.parse_snippet("test", "func Test$1(t *testing.T) {\n    $0\n}")
+                },
+                heex = {
+                    ls.parser.parse_snippet("el", "<%= $1 =>$0")
                 }
             }
         )

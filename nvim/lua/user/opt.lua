@@ -2,6 +2,7 @@ local o = vim.opt
 local g = vim.g
 
 g.mapleader = " "
+g.maplocalleader = " "
 g.netrw_banner = 0
 g.netrw_liststyle = 3
 g.netrw_altv = 1
@@ -28,4 +29,4 @@ o.splitright = true
 o.confirm = true
 
 -- adds current git branch to status line
-o.statusline="%<%f %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%) %P"
+o.statusline = "%<%f %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%) %P"
