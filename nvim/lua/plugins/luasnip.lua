@@ -39,7 +39,7 @@ return {
                     ls.parser.parse_snippet("@f", "@foreach ($1 as $2)\n    $0\n@endforeach"),
                     ls.parser.parse_snippet("if", "if ($1) {\n    $0\n}"),
                     ls.parser.parse_snippet("@i", "@if ($1)\n    $0\n@endif"),
-                    ls.parser.parse_snippet("{{", "{{ $1 }}$0"),
+                    ls.parser.parse_snippet("el", "{{ $1 }}$0"),
                 },
                 javascript = {
                     ls.parser.parse_snippet("log", "console.log($1);")
