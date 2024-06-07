@@ -49,7 +49,8 @@ return {
                 },
                 go = {
                     ls.parser.parse_snippet("ee", "if err != nil {\n    $0\n}"),
-                    ls.parser.parse_snippet("test", "func Test$1(t *testing.T) {\n    $0\n}")
+                    ls.parser.parse_snippet("test", "func Test$1(t *testing.T) {\n    $0\n}"),
+                    ls.parser.parse_snippet("ff", "func $1($2) $3{\n    $0\n}")
                 },
                 heex = {
                     ls.parser.parse_snippet("el", "<%= $1 =>$0")
