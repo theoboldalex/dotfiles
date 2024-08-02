@@ -1,7 +1,6 @@
---NORMAL MODE REMAPS -- 
-vim.keymap.set("n", "<leader>1", "<cmd>Neotree toggle<cr>")
-vim.keymap.set("n", "<leader>2", "<cmd>Neotree reveal<cr>")
-vim.keymap.set("n", "<leader>rl", ":set relativenumber! <cr>")
+--NORMAL MODE REMAPS --
+vim.keymap.set("n", "<leader>fp", "<cmd>let @+ = expand('%')<CR>")
+vim.keymap.set("n", "<leader>rl", ":set relativenumber! <CR>")
 vim.keymap.set("n", "<leader>x", ":w<CR> :so %<CR>")
 vim.keymap.set("n", "<leader>[", ":call append(line('.')-1, '')<CR>")
 vim.keymap.set("n", "<leader>]", ":call append(line('.'), '')<CR>")
@@ -43,7 +42,7 @@ vim.keymap.set("n", "<leader>gv", function()
     })
 end)
 
--- VISUAL MODE REMAPS -- 
+-- VISUAL MODE REMAPS --
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- re-select visual selection after indent
