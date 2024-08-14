@@ -16,7 +16,7 @@ alias srczsh="source $HOME/.zshrc"
 alias sed="gsed"
 alias cat="bat"
 alias hg="history | rg -i"
-alias b="./branch.sh"
+alias b="branch.sh"
 
 alias d="docker"
 alias dc="docker-compose"
