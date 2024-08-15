@@ -30,3 +30,7 @@ o.confirm = true
 
 -- adds current git branch to status line
 o.statusline = "%<%f %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%) %P"
+
+-- use rg
+vim.opt.grepprg = "rg --vimgrep"
+vim.opt.grepformat = "%f:%l:%c:%m"
