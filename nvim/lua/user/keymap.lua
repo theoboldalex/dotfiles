@@ -10,9 +10,13 @@ vim.keymap.set("n", "c[", ":cp<CR>zz")
 vim.keymap.set("n", "c]", ":cn<CR>zz")
 vim.keymap.set("n", "cx", ":ccl<CR>")
 vim.keymap.set("n", "<leader>o", "<cmd>!open %<cr><cr>")
+
 -- get current file path from repo root
--- TODO: needs to be os agnostic
-vim.keymap.set("n", "<leader>rp", ":!echo % | pbcopy<cr>")
+if vim.trim(vim.fn.system("uname")) == "Linux" then
+    vim.keymap.set("n", "<leader>rp", ":!echo % | xclip -selection c<cr><cr>")
+else
+    vim.keymap.set("n", "<leader>rp", ":!echo % | pbcopy<cr>")
+end
 
 -- vim-fugitive
 vim.keymap.set("n", "<leader>gb", "<cmd>Git blame -w<cr>")
