@@ -33,14 +33,13 @@ return {
             -- see :help lsp-zero-keybindings
             -- to learn the available actions
             lsp_zero.default_keymaps(opts)
-            vim.keymap.set("n", "<leader>df", "<cmd>Telescope diagnostics<cr>", opts)
             vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
             vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
         end)
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
-            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "clojure_lsp", "ocamllsp" },
+            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server" },
             handlers = {
                 lsp_zero.default_setup,
                 lua_ls = function()
@@ -60,12 +59,6 @@ return {
                 end,
                 bashls = function()
                     require("lspconfig").bashls.setup({})
-                end,
-                clojure_lsp = function()
-                    require("lspconfig").clojure_lsp.setup({})
-                end,
-                ocamllsp = function()
-                    require("lspconfig").ocamllsp.setup({})
                 end,
                 emmet_language_server = function()
                     require("lspconfig").emmet_language_server.setup({

@@ -15,4 +15,5 @@ require("lazy").setup({
     "tpope/vim-fugitive",
     "tpope/vim-commentary",
     { import = "plugins" },
+    -- { dir = "~/plugins/<name_of_plugin>" }
 })
