@@ -39,7 +39,7 @@ return {
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
-            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server" },
+            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server", "vtsls" },
             handlers = {
                 lsp_zero.default_setup,
                 lua_ls = function()
@@ -59,6 +59,9 @@ return {
                 end,
                 bashls = function()
                     require("lspconfig").bashls.setup({})
+                end,
+                vtsls = function()
+                    require("lspconfig").vtsls.setup({})
                 end,
                 emmet_language_server = function()
                     require("lspconfig").emmet_language_server.setup({
