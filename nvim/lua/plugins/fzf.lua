@@ -11,6 +11,7 @@ return {
         })
 
         vim.keymap.set("n", "<c-P>", require('fzf-lua').files, { desc = "Fzf Files" })
-        vim.keymap.set("n", "<c-F>", require('fzf-lua').live_grep, { desc = "Fzf Grep" })
+        vim.keymap.set("n", "<leader>fg", require('fzf-lua').live_grep, { desc = "Fzf Grep" })
+        vim.keymap.set("n", "<leader>fb", require('fzf-lua').buffers, { desc = "Fzf Buffers" })
     end
 }
