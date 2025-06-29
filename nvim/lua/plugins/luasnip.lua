@@ -53,7 +53,8 @@ return {
                     ls.parser.parse_snippet("ff", "func $1($2) $3{\n    $0\n}")
                 },
                 heex = {
-                    ls.parser.parse_snippet("el", "<%= $1 =>$0")
+                    ls.parser.parse_snippet("el", "<%= $1 %>$0"),
+                    ls.parser.parse_snippet("%for", "<%= for $1 <- $2 do %>\n  $0\n<% end %>")
                 }
             }
         )

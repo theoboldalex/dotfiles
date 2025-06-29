@@ -33,3 +33,4 @@ ln -s $DOTFILES/scripts $HOME/.config/bin
 # EMACS
 rm -rf $HOME/.emacs
 ln -s $DOTFILES/emacs/emacs.el $HOME/.emacs
+
