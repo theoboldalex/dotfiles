@@ -39,11 +39,7 @@ return {
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
-<<<<<<< Updated upstream
-            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server", "vtsls" },
-=======
             ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server", "vtsls", "elixirls" },
->>>>>>> Stashed changes
             handlers = {
                 lsp_zero.default_setup,
                 lua_ls = function()
@@ -67,12 +63,9 @@ return {
                 vtsls = function()
                     require("lspconfig").vtsls.setup({})
                 end,
-<<<<<<< Updated upstream
-=======
                 elixirls = function()
                     require("lspconfig").elixirls.setup({})
                 end,
->>>>>>> Stashed changes
                 emmet_language_server = function()
                     require("lspconfig").emmet_language_server.setup({
                         filetypes = {

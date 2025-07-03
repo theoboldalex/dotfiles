@@ -21,6 +21,7 @@ alias sed="gsed"
 alias cat="batcat"
 alias hg="history | rg -i"
 alias b="branch.sh"
+alias z="zesh.sh"
 
 alias d="docker"
 alias dc="docker-compose"
