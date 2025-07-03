@@ -34,7 +34,7 @@ alias python="python3"
 alias pip="pip3"
 
 export PATH="$HOME/.config/bin:$PATH"
-export PATH="~/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 if [ -f $HOME/.config/zsh/repoalias ]; then
     source $HOME/.config/zsh/repoalias
