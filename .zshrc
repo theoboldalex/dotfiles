@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Path to your oh-my-zsh installation.
 if [[ $OS_TYPE == "darwin" ]]; then
     export ZSH="/Users/$USER/.oh-my-zsh"
@@ -40,5 +42,4 @@ else
     print "404: ~/.config/zsh/repoalias not found."
 fi
 
-export PATH="/home/theoboldalex/.config/herd-lite/bin:$PATH"
-export PHP_INI_SCAN_DIR="/home/theoboldalex/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+# zprof
