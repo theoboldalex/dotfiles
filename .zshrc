@@ -1,5 +1,11 @@
+# zmodload zsh/zprof
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/$USER/.oh-my-zsh"
+if [[ $OS_TYPE == "darwin" ]]; then
+    export ZSH="/Users/$USER/.oh-my-zsh"
+else
+    export ZSH="/home/$USER/.oh-my-zsh"
+fi
 
 ZSH_THEME="mnml"
 
@@ -14,9 +20,10 @@ alias vi="nvim"
 alias zshrc="nvim $HOME/.zshrc"
 alias srczsh="source $HOME/.zshrc"
 alias sed="gsed"
-alias cat="bat"
+alias cat="batcat"
 alias hg="history | rg -i"
 alias b="branch.sh"
+alias z="zesh.sh"
 
 alias d="docker"
 alias dc="docker-compose"
@@ -29,6 +36,7 @@ alias pip="pip3"
 
 export PATH="$HOME/.config/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 if [ -f $HOME/.config/zsh/repoalias ]; then
     source $HOME/.config/zsh/repoalias
@@ -36,3 +44,4 @@ else
     print "404: ~/.config/zsh/repoalias not found."
 fi
 
+# zprof

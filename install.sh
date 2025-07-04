@@ -29,3 +29,11 @@ ln -s $DOTFILES/.ideavimrc $HOME/.ideavimrc
 # SCRIPTS
 rm -rf $HOME/.config/bin
 ln -s $DOTFILES/scripts $HOME/.config/bin
+
+# EMACS
+rm -rf $HOME/.emacs
+ln -s $DOTFILES/emacs/emacs.el $HOME/.emacs
+
+# COBRA CONFIG
+rm -rf $HOME/.cobra.yaml
+ln -s $DOTFILES/cobra/.cobra.yaml $HOME/.cobra.yaml

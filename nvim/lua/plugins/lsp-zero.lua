@@ -39,7 +39,7 @@ return {
 
         require("mason").setup({})
         require("mason-lspconfig").setup({
-            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server", "vtsls" },
+            ensure_installed = { "intelephense", "lua_ls", "gopls", "bashls", "emmet_language_server", "vtsls", "elixirls" },
             handlers = {
                 lsp_zero.default_setup,
                 lua_ls = function()
@@ -68,6 +68,9 @@ return {
                 end,
                 ruff = function()
                     require("lspconfig").ruff.setup({})
+                end,
+                elixirls = function()
+                    require("lspconfig").elixirls.setup({})
                 end,
                 emmet_language_server = function()
                     require("lspconfig").emmet_language_server.setup({
