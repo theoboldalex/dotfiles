@@ -1,7 +1,7 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh installation.
-if [[ $OS_TYPE == "darwin" ]]; then
+if [[ $OSTYPE == "darwin"* ]]; then
     export ZSH="/Users/$USER/.oh-my-zsh"
 else
     export ZSH="/home/$USER/.oh-my-zsh"
