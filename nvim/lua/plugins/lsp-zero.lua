@@ -63,6 +63,12 @@ return {
                 vtsls = function()
                     require("lspconfig").vtsls.setup({})
                 end,
+                pyright = function()
+                    require("lspconfig").pyright.setup({})
+                end,
+                ruff = function()
+                    require("lspconfig").ruff.setup({})
+                end,
                 emmet_language_server = function()
                     require("lspconfig").emmet_language_server.setup({
                         filetypes = {

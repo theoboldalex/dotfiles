@@ -22,11 +22,13 @@ alias d="docker"
 alias dc="docker-compose"
 alias c="composer"
 alias a="php artisan"
+alias scrum="./scrum.sh"
 
 alias python="python3"
 alias pip="pip3"
 
 export PATH="$HOME/.config/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 if [ -f $HOME/.config/zsh/repoalias ]; then
     source $HOME/.config/zsh/repoalias
