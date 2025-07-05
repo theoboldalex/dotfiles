@@ -1,7 +1,7 @@
 # zmodload zsh/zprof
 
 # Path to your oh-my-zsh installation.
-if [[ $OS_TYPE == "darwin" ]]; then
+if [[ $OSTYPE == "darwin"* ]]; then
     export ZSH="/Users/$USER/.oh-my-zsh"
 else
     export ZSH="/home/$USER/.oh-my-zsh"
@@ -29,11 +29,13 @@ alias d="docker"
 alias dc="docker-compose"
 alias c="composer"
 alias a="php artisan"
+alias scrum="./scrum.sh"
 
 alias python="python3"
 alias pip="pip3"
 
 export PATH="$HOME/.config/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
 if [ -f $HOME/.config/zsh/repoalias ]; then

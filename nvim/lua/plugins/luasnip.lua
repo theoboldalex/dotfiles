@@ -40,6 +40,8 @@ return {
                     ls.parser.parse_snippet("if", "if ($1) {\n    $0\n}"),
                     ls.parser.parse_snippet("@i", "@if ($1)\n    $0\n@endif"),
                     ls.parser.parse_snippet("el", "{{ $1 }}$0"),
+                    ls.parser.parse_snippet("mig",
+                        "public function up(): void\n{\n\t$0\n}\n\npublic function down(): void\n{\n}")
                 },
                 javascript = {
                     ls.parser.parse_snippet("log", "console.log($1);")
