@@ -1,0 +1,17 @@
+* Emacs Config Todo
+
+** TODO separate out custom file
+** TODO multiple cursor support
+** TODO inhibit start up screen
+** TODO use package download if not installed on startup
+** TODO keyboard shortcuts for things like duplicate line
+** TODO multiple cursors
+
+* essential packages
+- lsp-mode
+- paredit
+- gruvbox-theme
+- smex
+- magit
+- company (or alternative)
+- org-mode

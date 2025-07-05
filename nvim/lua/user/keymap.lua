@@ -1,5 +1,3 @@
--- ------------------ --
-
 vim.keymap.set("n", "<leader>fp", "<cmd>let @+ = expand('%')<CR>")
 vim.keymap.set("n", "<leader>rl", ":set relativenumber! <CR>")
 vim.keymap.set("n", "<leader>x", ":w<CR> :so %<CR>")

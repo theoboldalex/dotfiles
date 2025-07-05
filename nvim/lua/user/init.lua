@@ -1,3 +1,4 @@
+require("user.ai")
 require("user.opt")
 require("user.keymap")
 require("user.lazy")
