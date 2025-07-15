@@ -25,7 +25,7 @@ alias b="branch.sh"
 alias z="zesh.sh"
 
 if [[ $OSTYPE == "darwin"* ]]; then
-    alias cat="cat"
+    alias cat="bat"
 elif [[ $OSTYPE == "linux"* ]]; then
     alias cat="batcat"
 fi
