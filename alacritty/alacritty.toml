@@ -49,7 +49,7 @@ cursor = "#d8dee9"
 text = "#2e3440"
 
 [font]
-size = 13
+size = 14
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -60,7 +60,7 @@ family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [font.glyph_offset]
-y = 1
+y = 3
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
@@ -71,7 +71,7 @@ family = "JetBrainsMono Nerd Font"
 style = "Regular"
 
 [font.offset]
-y = 2
+y = 6
 
 [[keyboard.bindings]]
 chars = "º"
