@@ -39,6 +39,7 @@ alias scrum="./scrum.sh"
 alias python="python3"
 alias pip="pip3"
 
+export EDITOR="nvim"
 export PATH="$HOME/.config/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
