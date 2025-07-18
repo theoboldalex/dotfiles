@@ -12,11 +12,9 @@ return {
                 "typescript",
                 "javascript",
                 "vimdoc",
-                "elixir",
-                "erlang",
-                "eex",
-                "heex",
                 "html",
+                "go",
+                "python",
             },
             sync_install = false,
             highlight = {

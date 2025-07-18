@@ -37,6 +37,7 @@ alias pip="pip3"
 export PATH="$HOME/.config/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH=$PATH:~/.local/bin
 
 if [ -f $HOME/.config/zsh/repoalias ]; then
     source $HOME/.config/zsh/repoalias

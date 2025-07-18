@@ -1,12 +1,7 @@
 return {
-    "shaunsingh/nord.nvim",
-    lazy = false,
-    priority = 1000,
+    'mellow-theme/mellow.nvim',
+    priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
-        vim.g.nord_italic = false
-        vim.g.nord_disable_background = true
-        vim.cmd("colorscheme nord")
-        vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-        vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+        vim.cmd.colorscheme('mellow')
     end,
 }
