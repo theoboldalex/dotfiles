@@ -95,7 +95,9 @@ vim.api.nvim_create_autocmd({ "BufwritePre" }, {
 
 -- LSP
 vim.diagnostic.config({
-    virtual_text = { current_line = true },
+    -- virtual_text = { current_line = true },
+    -- virtual_text = true,
+    virtual_lines = true
 })
 vim.lsp.config('*', {
     root_markers = { ".git" },

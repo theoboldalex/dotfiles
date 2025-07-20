@@ -9,6 +9,12 @@ return {
             },
             runtime = {
                 version = "LuaJIT",
+            },
+            workspace = {
+                library = {
+                    vim.fn.expand("$VIMRUNTIME/lua"),
+                    vim.fn.stdpath("config")
+                }
             }
         }
     },
