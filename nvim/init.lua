@@ -39,6 +39,8 @@ else
     vim.keymap.set("n", "<leader>rp", ":!echo % | pbcopy<cr>")
 end
 
+vim.keymap.set("n", "<leader>ff", ":find ") -- could we go plugin free?
+vim.keymap.set("n", "<leader>rg", ":grep ") -- could we go plugin free?
 vim.keymap.set("n", "<leader>[", ":call append(line('.')-1, '')<CR>")
 vim.keymap.set("n", "<leader>]", ":call append(line('.'), '')<CR>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
