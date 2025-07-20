@@ -19,12 +19,12 @@ source $ZSH/oh-my-zsh.sh
 alias vi="nvim"
 alias zshrc="nvim $HOME/.zshrc"
 alias srczsh="source $HOME/.zshrc"
-alias sed="gsed"
 alias hg="history | rg -i"
 alias b="branch.sh"
 alias z="zesh.sh"
 
 if [[ $OSTYPE == "darwin"* ]]; then
+    alias sed="gsed"
     alias cat="bat"
 elif [[ $OSTYPE == "linux"* ]]; then
     alias cat="batcat"
