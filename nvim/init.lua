@@ -100,6 +100,8 @@ vim.diagnostic.config({
 vim.lsp.config('*', {
     root_markers = { ".git" },
 })
-vim.lsp.enable('luals')
-vim.lsp.enable('gopls')
-vim.lsp.enable('intelephense')
+vim.lsp.enable({
+    'luals',
+    'gopls',
+    'intelephense',
+})
