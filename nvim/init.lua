@@ -99,5 +99,5 @@ vim.diagnostic.config({
 })
 vim.lsp.config('*', {})
 vim.lsp.enable('luals')
-vim.lsp.enable('intelephense')
 vim.lsp.enable('gopls')
+vim.lsp.enable('intelephense')
