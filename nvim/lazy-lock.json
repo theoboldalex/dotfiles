@@ -1,4 +1,6 @@
 {
+  "blink.cmp": { "branch": "main", "commit": "586ee87534f5bf65f1c8dea2d1da2a57e8cddd36" },
+  "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "fzf-lua": { "branch": "main", "commit": "07326bb95827f1f4b7d7aead5e8094d844588d08" },
   "kommentary": { "branch": "main", "commit": "d5a111a3bc4109a8f913a5863c9092b3b3801482" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },

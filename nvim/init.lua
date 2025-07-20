@@ -97,7 +97,9 @@ vim.api.nvim_create_autocmd({ "BufwritePre" }, {
 vim.diagnostic.config({
     virtual_text = { current_line = true },
 })
-vim.lsp.config('*', {})
+vim.lsp.config('*', {
+    root_markers = { ".git" },
+})
 vim.lsp.enable('luals')
 vim.lsp.enable('gopls')
 vim.lsp.enable('intelephense')

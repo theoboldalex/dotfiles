@@ -8,7 +8,6 @@ end
 return {
     cmd = { "intelephense", "--stdio" }, -- not sure stdio is the right option
     filetypes = { 'php' },
-    root_markers = { '.git' },
     init_options = {
         licenceKey = get_intelephense_license_key()
     }
