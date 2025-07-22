@@ -134,3 +134,8 @@
   "opens my .emacs config file"
   (interactive)
   (find-file "~/.emacs"))
+
+(defun econf-reload ()
+  "Reloads the .emacs config file"
+  (interactive)
+  (load-file "~/.emacs"))
