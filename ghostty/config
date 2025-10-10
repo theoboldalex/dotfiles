@@ -4,6 +4,6 @@ cursor-invert-fg-bg = true
 cursor-style-blink = false
 shell-integration-features = no-cursor
 theme = mellow
-font-family = JetBrainsMono Nerd Font Mono
 font-size = 15
 adjust-cell-height = 15%
+macos-option-as-alt = true
