@@ -9,8 +9,10 @@ return {
             }
         })
 
-        vim.keymap.set("n", "<c-P>", require('fzf-lua').files, { desc = "Fzf Files" })
-        vim.keymap.set("n", "<leader>fg", require('fzf-lua').live_grep, { desc = "Fzf Grep" })
-        vim.keymap.set("n", "<leader>fb", require('fzf-lua').buffers, { desc = "Fzf Buffers" })
+        vim.keymap.set("n", "<leader>sf", require('fzf-lua').files)
+        vim.keymap.set("n", "<leader>sg", require('fzf-lua').live_grep)
+        vim.keymap.set("n", "<leader>sb", require('fzf-lua').buffers)
+        vim.keymap.set("n", "<leader>gg", require('fzf-lua').git_branches)
+        vim.keymap.set("n", "<leader>sh", require('fzf-lua').helptags)
     end
 }

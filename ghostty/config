@@ -6,4 +6,4 @@ shell-integration-features = no-cursor
 theme = mellow
 font-size = 15
 adjust-cell-height = 15%
-macos-option-as-alt = true
+macos-option-as-alt = left

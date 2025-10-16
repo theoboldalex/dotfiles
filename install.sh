@@ -41,3 +41,7 @@ ln -s $DOTFILES/cobra/.cobra.yaml $HOME/.cobra.yaml
 # GHOSTTY CONFIG
 rm -rf $HOME/.config/ghostty
 ln -s $DOTFILES/ghostty $HOME/.config/ghostty
+
+# VIM CONFIG
+rm $HOME/.vimrc
+ln -s $DOTFILES/.vimrc $HOME/.vimrc
