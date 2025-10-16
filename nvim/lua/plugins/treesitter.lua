@@ -15,6 +15,7 @@ return {
                 "html",
                 "go",
                 "python",
+                "blade"
             },
             sync_install = false,
             highlight = {
